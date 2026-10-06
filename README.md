@@ -4,14 +4,6 @@
 
 ---
 
-## 📌 Sobre o Projeto
-
-O **Café Perfeito** é uma aplicação web criada para apresentar uma marca de cafés especiais, destacando a qualidade dos grãos, a história da cafeteria, o cardápio e os canais de contato. 
-
-O objetivo principal do projeto é aplicar os conceitos fundamentais do React (componentização, propriedades, estados e reatividade) junto com boas práticas de desenvolvimento front-end.
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -20,18 +12,30 @@ O objetivo principal do projeto é aplicar os conceitos fundamentais do React (c
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ---
 
 ## 🚀 Funcionalidades
 
-- **Hero Section:** Apresentação impactante com chamada para ação (*CTA*).
-- **Catálogo de Produtos:** Cards dinâmicos exibindo diferentes tipos de cafés e bebidas.
-- **Sobre Nós:** Seção apresentando a história e os diferenciais do Café Perfeito.
-- **Depoimentos de Clientes:** Avaliações e experiência dos consumidores.
-- **Formulário de Contato / Localização:** Canal direto com o cliente e informações da cafeteria.
-- **Design Responsivo:** Layout adaptado para smartphones, tablets e desktops.
+Com base no layout da aplicação, o projeto conta com as seguintes seções e funcionalidades:
+
+- **Barra de Navegação Superior (Header):** Menu funcional com links diretos de navegação para *Início*, *Catálogo*, *Sobre* e *Contato*.
+- **Seção Principal (Hero Section):**
+  - Identificação de localização em destaque ("Lagoa da Conceição - Florianópolis")[cite: 1].
+  - Slogan de impacto ("Café coado, vista para a lagoa.")[cite: 1].
+  - Breve texto sobre os diferenciais da casa (grãos locais do sul do Brasil, pães de fermentação natural e doces artesanais)[cite: 1].
+  - Botões de Chamada para Ação (*CTA*): "Ver cardápio" e "Fale com a gente"[cite: 1].
+  - Área reservada para a imagem em destaque do balcão e ambiente[cite: 1].
+- **Vitrine "Mais Pedidos":**
+  - Lista em formato de cards exibindo os produtos mais populares ("Cappuccino da casa", "Pão de queijo recheado", "Torta de banana com canela")[cite: 1].
+  - Tags identificadoras de categoria (*Bebidas*, *Salgados*, *Doces*)[cite: 1].
+  - Exibição de descrição individual dos ingredientes e preço formatado em Reais (R$)[cite: 1].
+  - Atalho rápido "Ver cardápio completo"[cite: 1].
+- **Informações Práticas de Atendimento:**
+  - **Horário:** Exibição clara do horário de funcionamento (Terça a domingo, das 7h às 19h)[cite: 1].
+  - **Endereço:** Localização fixa na Lagoa da Conceição[cite: 1].
+  - **Telefone:** Canal de atendimento direto ao cliente[cite: 1].
+- **Rodapé Institucional:** Rodapé com copyright e aviso de projeto fictício para fins didáticos[cite: 1].
 
 ---
 
