@@ -21,21 +21,21 @@ Com base no layout da aplicação, o projeto conta com as seguintes seções e f
 
 - **Barra de Navegação Superior (Header):** Menu funcional com links diretos de navegação para *Início*, *Catálogo*, *Sobre* e *Contato*.
 - **Seção Principal (Hero Section):**
-  - Identificação de localização em destaque ("Lagoa da Conceição - Florianópolis")[cite: 1].
-  - Slogan de impacto ("Café coado, vista para a lagoa.")[cite: 1].
-  - Breve texto sobre os diferenciais da casa (grãos locais do sul do Brasil, pães de fermentação natural e doces artesanais)[cite: 1].
-  - Botões de Chamada para Ação (*CTA*): "Ver cardápio" e "Fale com a gente"[cite: 1].
-  - Área reservada para a imagem em destaque do balcão e ambiente[cite: 1].
+  - Identificação de localização em destaque ("Lagoa da Conceição - Florianópolis").
+  - Slogan de impacto ("Café coado, vista para a lagoa.").
+  - Breve texto sobre os diferenciais da casa (grãos locais do sul do Brasil, pães de fermentação natural e doces artesanais).
+  - Botões de Chamada para Ação (*CTA*): "Ver cardápio" e "Fale com a gente".
+  - Área reservada para a imagem em destaque do balcão e ambiente.
 - **Vitrine "Mais Pedidos":**
-  - Lista em formato de cards exibindo os produtos mais populares ("Cappuccino da casa", "Pão de queijo recheado", "Torta de banana com canela")[cite: 1].
-  - Tags identificadoras de categoria (*Bebidas*, *Salgados*, *Doces*)[cite: 1].
-  - Exibição de descrição individual dos ingredientes e preço formatado em Reais (R$)[cite: 1].
-  - Atalho rápido "Ver cardápio completo"[cite: 1].
+  - Lista em formato de cards exibindo os produtos mais populares ("Cappuccino da casa", "Pão de queijo recheado", "Torta de banana com canela").
+  - Tags identificadoras de categoria (*Bebidas*, *Salgados*, *Doces*).
+  - Exibição de descrição individual dos ingredientes e preço formatado em Reais (R$).
+  - Atalho rápido "Ver cardápio completo".
 - **Informações Práticas de Atendimento:**
-  - **Horário:** Exibição clara do horário de funcionamento (Terça a domingo, das 7h às 19h)[cite: 1].
-  - **Endereço:** Localização fixa na Lagoa da Conceição[cite: 1].
-  - **Telefone:** Canal de atendimento direto ao cliente[cite: 1].
-- **Rodapé Institucional:** Rodapé com copyright e aviso de projeto fictício para fins didáticos[cite: 1].
+  - **Horário:** Exibição clara do horário de funcionamento (Terça a domingo, das 7h às 19h).
+  - **Endereço:** Localização fixa na Lagoa da Conceição.
+  - **Telefone:** Canal de atendimento direto ao cliente.
+- **Rodapé Institucional:** Rodapé com copyright e aviso de projeto fictício para fins didáticos.
 
 ---
 
