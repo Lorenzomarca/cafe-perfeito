@@ -1,0 +1,38 @@
+:root {
+    --cor-fundo: #ffffff;
+
+    /* Cores da logo */
+    --azul-escuro: #062a5c;
+    --azul: #2ba8fb;
+    --azul-claro: #6fc5ff;
+    --dourado: #e6b93f;
+
+    --texto: #062a5c;
+
+    --raio-pequeno: 6px;
+    --raio-grande: 10px;
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background-color: var(--cor-fundo);
+
+    font-family: system-ui, -apple-system, sans-serif;
+
+    color: var(--texto);
+}
