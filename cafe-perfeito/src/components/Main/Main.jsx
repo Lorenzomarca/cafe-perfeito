@@ -1,4 +1,8 @@
 import "./Main.css";
+import prince from "../../assets/image/cafe-main.png";
+import chigiri from "../../assets/image/cafe-pantera.png";
+import reo from "../../assets/image/cafe-camaleao.png";
+import nagi from "../../assets/image/café-genio.png";
 
 function Main() {
   const produtos = [
@@ -8,7 +12,7 @@ function Main() {
       descricao:
         "Café que te deixa veloz e energético, perfeito para quem precisa de um boost de energia.",
       preco: "R$ 6,99",
-      imagem: "",
+      imagem: chigiri,
     },
     {
       id: 2,
@@ -16,7 +20,7 @@ function Main() {
       descricao:
         "Café que te deixa mais inteligente e criativo, perfeito para quem precisa de um boost de criatividade.",
       preco: "R$ 7,99",
-      imagem: "",
+      imagem: nagi,
     },
 
     {
@@ -25,7 +29,7 @@ function Main() {
       descricao:
         "Café que te deixa mais adaptável e flexível, perfeito para quem precisa de um boost de adaptação.",
       preco: "R$ 8,99",
-      imagem: "",
+      imagem: reo,
     },
   ];
   return (
@@ -45,7 +49,7 @@ function Main() {
           </a>
         </div>
 
-        <div className="hero-image">{}</div>
+        <div className="hero-image">{prince}</div>
       </section>
 
       <section className="catalogo" id="catalogo">
@@ -61,14 +65,44 @@ function Main() {
           </a>
         </div>
 
-        <div className="produtos">
-          <article className="produto-card">
-            <div className="produto-imagem"></div>
+      <div className="produtos">
 
-            <div className="produto-info">
-              <div className="produto-bottom"></div>
-            </div>
-          </article>
+                    {produtos.map((produto) => (
+                        <article className="produto-card" key={produto.id}>
+
+                            <div className="produto-imagem">
+                                {produto.imagem && (
+                                    <img
+                                        src={produto.imagem}
+                                        alt={produto.nome}
+                                    />
+                                )}
+                            </div>
+
+                            <div className="produto-info">
+
+                                <h3>
+                                    {produto.nome}
+                                </h3>
+
+                                <p>
+                                    {produto.descricao}
+                                </p>
+
+                                <div className="produto-bottom">
+                                    <strong>
+                                        {produto.preco}
+                                    </strong>
+
+                                    <button>
+                                        Pedir
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </article>
+                    ))}
         </div>
       </section>
     </main>
