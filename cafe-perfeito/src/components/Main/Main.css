@@ -121,7 +121,6 @@
     font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
-
     transition: color 0.2s ease;
 }
 
@@ -228,28 +227,125 @@
     background-color: var(--azul-claro);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+
+    .hero {
+        padding: 50px 30px;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-image {
+        width: 42%;
+        height: 280px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalogo {
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 700px) {
+
     .hero {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+
+        padding: 45px 20px;
+        gap: 30px;
     }
 
     .hero-content {
         max-width: 100%;
     }
 
+    .hero-subtitle {
+        font-size: 0.7rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.15;
+    }
+
+    .hero p {
+        margin-top: 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        margin-top: 20px;
+    }
+
     .hero-image {
         width: 100%;
-        height: 300px;
+        max-width: 450px;
+        height: 280px;
+    }
+
+    .catalogo {
+        padding: 40px 20px;
+    }
+
+    .catalogo-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .catalogo-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .catalogo-header p {
+        font-size: 0.8rem;
     }
 
     .produtos {
         grid-template-columns: 1fr;
+        gap: 18px;
     }
 
-    .catalogo-header {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
+    .produto-imagem {
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 0.85rem;
+    }
+
+    .hero-image {
+        height: 230px;
+    }
+
+    .catalogo {
+        padding: 35px 15px;
+    }
+
+    .produto-imagem {
+        height: 180px;
+    }
+
+    .produto-info {
+        padding: 15px;
     }
 }

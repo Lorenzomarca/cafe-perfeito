@@ -1,140 +1,226 @@
+:root {
+    --cor-fundo: #ffffff;
 
+    --azul-escuro: #062a5c;
+    --azul: #2ba8fb;
+    --azul-claro: #6fc5ff;
+    --dourado: #e6b93f;
+
+    --texto: #062a5c;
+
+    --raio-pequeno: 6px;
+    --raio-grande: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: system-ui, -apple-system, sans-serif;
+    color: var(--texto);
+}
 
 .header {
     width: 100%;
-
     background-color: white;
-
     border-bottom: 2px solid var(--dourado);
 }
-
-
 
 .header-container {
     width: 100%;
     max-width: 1100px;
-
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 14px 40px;
 }
-
-
 
 .logo {
     display: flex;
     align-items: center;
-
     gap: 10px;
-
     color: var(--azul-escuro);
-
     font-size: 1.25rem;
     font-weight: 800;
-
     white-space: nowrap;
-
     user-select: none;
 }
-
 
 .LogoS {
     width: 36px;
     height: 36px;
-
     object-fit: contain;
-
     flex-shrink: 0;
 }
-
-
-
 
 .nav {
     display: flex;
     align-items: center;
-
     gap: 28px;
-
     margin-left: 50px;
 }
-
-
 
 .nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-decoration: none;
-
     color: var(--azul-escuro);
-
     font-size: 0.95rem;
     font-weight: 600;
-
     padding: 9px 14px;
-
     border-radius: var(--raio-pequeno);
-
     transition: color 0.2s ease;
 }
-
-
-/* =========================
-   HOVER DOS LINKS
-========================= */
 
 .nav a:not(.btn-inicio):hover {
     color: var(--azul);
 }
 
-
-
 .nav .btn-inicio {
     padding: 9px 14px;
-
     border: 0;
-
     border-radius: var(--raio-pequeno);
-
     background-color: var(--azul);
-
     color: #ffffff;
-
     font-size: 0.95rem;
     font-family: inherit;
     font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav .btn-inicio:hover {
+    background-color: var(--azul-claro);
+    box-shadow: 0 0 12px rgba(111, 197, 255, 0.25);
+    transform: scale(1.03);
+}
+
+.nav .btn-inicio:active {
+    background-color: #3d94cf;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.menu-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+
+    border: 0;
+    background: transparent;
 
     cursor: pointer;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 24px;
+    height: 2px;
+
+    background-color: var(--azul-escuro);
+    border-radius: 5px;
 
     transition: all 0.3s ease;
 }
 
-
-
-.nav .btn-inicio:hover {
-    background-color: var(--azul-claro);
-
-    box-shadow: 0 0 12px rgba(111, 197, 255, 0.25);
-
-    transform: scale(1.03);
+.menu-toggle.ativo span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
 }
 
+.menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+}
 
+.menu-toggle.ativo span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
 
+@media (max-width: 700px) {
 
+    .header-container {
+        position: relative;
+        padding: 12px 20px;
+    }
 
-.nav .btn-inicio:active {
-    background-color: #3d94cf;
+    .logo {
+        font-size: 1.1rem;
+    }
 
-    transition: all 0.15s ease;
+    .LogoS {
+        width: 32px;
+        height: 32px;
+    }
 
-    box-shadow: none;
+    .menu-toggle {
+        display: flex;
+    }
 
-    transform: scale(0.98);
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 15px 20px;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+
+        background-color: white;
+
+        border-bottom: 2px solid var(--dourado);
+
+        box-shadow: 0 8px 20px rgba(6, 42, 92, 0.08);
+
+        z-index: 100;
+    }
+
+    .nav.menu-aberto {
+        display: flex;
+    }
+
+    .nav a {
+        width: 100%;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .nav .btn-inicio {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .header-container {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .LogoS {
+        width: 30px;
+        height: 30px;
+    }
 }
