@@ -1,6 +1,4 @@
-/* =========================
-   HEADER
-========================= */
+
 
 .header {
     width: 100%;
@@ -11,9 +9,6 @@
 }
 
 
-/* =========================
-   CONTAINER DO HEADER
-========================= */
 
 .header-container {
     width: 100%;
@@ -29,9 +24,6 @@
 }
 
 
-/* =========================
-   LOGO + NOME
-========================= */
 
 .logo {
     display: flex;
@@ -50,8 +42,6 @@
 }
 
 
-/* IMAGEM DA LOGO */
-
 .LogoS {
     width: 36px;
     height: 36px;
@@ -62,9 +52,7 @@
 }
 
 
-/* =========================
-   NAVEGAÇÃO
-========================= */
+
 
 .nav {
     display: flex;
@@ -76,9 +64,6 @@
 }
 
 
-/* =========================
-   LINKS DA NAV
-========================= */
 
 .nav a {
     display: flex;
@@ -109,9 +94,6 @@
 }
 
 
-/* =========================
-   BOTÃO INÍCIO
-========================= */
 
 .nav .btn-inicio {
     padding: 9px 14px;
@@ -134,9 +116,6 @@
 }
 
 
-/* =========================
-   HOVER DO BOTÃO INÍCIO
-========================= */
 
 .nav .btn-inicio:hover {
     background-color: var(--azul-claro);
@@ -147,9 +126,8 @@
 }
 
 
-/* =========================
-   BOTÃO PRESSIONADO
-========================= */
+
+
 
 .nav .btn-inicio:active {
     background-color: #3d94cf;

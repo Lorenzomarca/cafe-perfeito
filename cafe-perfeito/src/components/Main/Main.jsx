@@ -1,5 +1,5 @@
 import "./Main.css";
-import prince from "../../assets/image/cafe-main.png";
+import nigeria from "../../assets/image/cafe-main.png";
 import chigiri from "../../assets/image/cafe-pantera.png";
 import reo from "../../assets/image/cafe-camaleao.png";
 import nagi from "../../assets/image/café-genio.png";
@@ -49,7 +49,9 @@ function Main() {
           </a>
         </div>
 
-        <div className="hero-image">{prince}</div>
+        <div className="hero-image">
+          <img src={nigeria} alt="" />
+        </div>
       </section>
 
       <section className="catalogo" id="catalogo">
